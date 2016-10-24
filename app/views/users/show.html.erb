@@ -33,7 +33,7 @@
       <% @user.photos.each do |photo| %>
         <li class="list-group-item">
           <a href="/photos/<%= photo.id %>">
-            <%= photo.photo_user_id %>
+            <%= photo.owner_id %>
           </a>
           <a href="/photos/<%= photo.id %>" class="btn btn-primary">
             Show

@@ -1,6 +1,6 @@
 ActiveAdmin.register Photo do
 
- permit_params :photo_user_id
+ permit_params :owner_id
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
