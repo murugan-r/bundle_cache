@@ -2,7 +2,7 @@ class User < ApplicationRecord
   # Direct associations
 
   has_many   :photos,
-             :foreign_key => "photo_user_id",
+             :foreign_key => "photo_owner_id",
              :dependent => :destroy
 
   # Indirect associations
