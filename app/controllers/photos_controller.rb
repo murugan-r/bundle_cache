@@ -23,7 +23,7 @@ class PhotosController < ApplicationController
 
   def create
     @photo = Photo.new
-    @photo.user_id = params[:user_id]
+    @photo.photo_user_id = params[:photo_user_id]
 
     if @photo.save
       redirect_to "/photos", :notice => "Photo created successfully."
@@ -39,7 +39,7 @@ class PhotosController < ApplicationController
   def update
     @photo = Photo.find(params[:id])
 
-    @photo.user_id = params[:user_id]
+    @photo.photo_user_id = params[:photo_user_id]
 
     if @photo.save
       redirect_to "/photos", :notice => "Photo updated successfully."
